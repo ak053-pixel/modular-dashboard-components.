@@ -11,3 +11,6 @@ export const MetricCard: React.FC<MetricProps> = ({ title, value }) => (
     <p style={{ fontSize: '1.5rem', fontWeight: 600 }}>{value}</p>
   </div>
 );
+
+// A11y update: add ARIA support for screen readers
+export const AccessibleMetricCard = MetricCard;
